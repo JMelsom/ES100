@@ -1,0 +1,405 @@
+/*
+Theme Name: GDWD Class Theme
+Theme URI: http://jmelsom.catstudents.com/q5/wordpress/
+Author: James Melsom
+Author URI: http://jmelsom.catstudents.com
+Description: Awesomo
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: classtheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url(http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic|Fjalla+One);
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font: 14px 'Cantarell', sans-serif;
+}
+body a {
+	color: red;
+	font-family: 'Fjalla One', sans-serif;
+	text-decoration: none;	
+}
+body a:hover {
+	color: white;
+}
+#descrip {
+	text-align: center;
+}
+img, embed, video, audio, object, picture {
+	max-width: 100%;
+	height: auto;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+nav[role=navigation]{
+	color: white;
+}
+nav[role=navigation] ul {
+		margin: 25px;
+	list-style: none;
+	padding: 0;
+}
+nav[role=navigation] ul li {
+	margin-top: 30px;
+}
+nav[role=navigation] ul a {
+	text-decoration: none;
+	color: white;
+}
+nav[role=navigation] ul a:hover {
+	color: red;
+}
+h1, h2 {
+	font-family: 'Fjalla One', sans-serif;
+}
+[role=page]{
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	position: relative;
+}
+section {
+	padding: 1em;
+	flex: 1;
+	background: rgb(0,0,0);
+	color: white;
+}
+[role=sidebar]{
+	background:rgb(25, 25, 25);
+	color: #d8d8d8;
+	padding: 1em;
+	min-width: 100px;
+	max-width: 300px;
+	flex: 1 300px;
+}
+.searchbar {
+	width: 100%;
+	text-align: center;
+}
+.pagetitle {
+	min-width: 100%;
+}
+pre {
+	white-space: normal;
+}
+footer {
+	flex: 1 100%;
+}
+.socialicons {
+	text-align: center;
+}
+.socialicons ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.socialicons ul li {
+	display: inline-block;
+}
+.socialicons a {
+	width: 2em;
+	height: 2em;
+	border-radius: 1em;
+	position: relative;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+}
+.socialicons .facebook {
+	background: url(images/facebook.svg);
+}
+.socialicons .twitter {
+	background: url(images/twitter.svg);
+}
+.socialicons .gplus {
+	background: url(images/gplus.svg);
+}
+.socialicons .linkedin {
+	background: url(images/linkedin.svg);
+}
+[role=slideshow]{
+	max-width: 1280px;
+	height: 720px;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.slides {
+	list-style: none;
+	margin: auto;
+	padding: 0;
+	max-width: 1280px;
+	position: relative;
+	max-height: 720px;
+}
+.slides li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+}
+.slides li figure img {
+	height: auto;
+	width: 100%;
+	min-width: 100%;
+}
+.slides figure {
+	margin: 0;
+}
+.slides figure figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.7);
+}
+.slides figure figcaption h2 {
+	margin-bottom: 5px;
+}
+#slide1 {
+	z-index: 10;
+}
+#slide2 {
+	z-index: 20;
+}
+#slide3 {
+	z-index: 30;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+	height: 150px;
+	width: auto;
+}
+.blogtitle {
+	text-align: center;
+	font-size: 28px;
+	margin: 15px;
+}
+.archive-post {
+	display: flex;
+	align-items:center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+.archive-info {
+	flex: 1 100%;
+	padding-right: 5px;
+}
+.archive-info h3 {
+	margin: 0;
+}
+.archive-title {
+	flex: 1 100%;
+	min-width: 100%;
+}
+.archive-info p {
+	margin: 0;
+	padding: 0;
+}
+.archive-excerpt {
+	flex: 1 75%;
+	padding: 0px 10px 0px 10px;
+}
+break {
+	flex: 1 100%;
+	min-width: 100%;
+	height: 15px;
+	content: ' ';
+}
+.archive-thumb {
+	flex: 1 25%;
+}
+.single-post {
+	width: 100%;
+}
+.single-info {
+	margin: 20px;
+}
+.single-info p {
+	margin: 0;
+	padding: 0;
+}
+.single-info h1 {
+	margin:0;
+	padding: 0;
+}
+.single-thumb {
+	text-align: center;
+	width: 100%;
+}
+.single-thumb img {
+	height: auto;
+}
+.single-text {
+	margin: auto;
+}
+.single-text p {
+	margin: auto;
+}
+.related-post {
+	width: 200px;
+	flex:1;
+	margin: 20px;
+}
+.related-thumb {
+	text-align: center;
+}
+.related-thumb img {
+	height: 100px;
+	width: auto;
+}
+.related-info h3 {
+	text-align: center;
+}
+.rel-posts-container {
+	min-height: 300px;
+	display: flex;
+	margin: 15px 0 15px 0;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.rel-posts-container h1 {
+	min-width: 100%;
+	flex: 3 100%;
+}
+.error-page {
+	
+}
+.error-page figure img {
+	width: 100%;
+	height: auto;
+}
+.error-page figure {
+	position: relative;
+	text-align: center;
+	margin: 0;
+}
+.error-page figure figcaption {
+	position: absolute;
+	top: 10vh;
+	right: 25vw;
+}
+.error-page figure figcaption h1 {
+	font-size: 48px;
+	margin: 5px;
+}
+[role=navigation] .widget {
+	list-style: none;
+}
+/* @media all and (max-width:400px){
+	nav[role=navigation]{
+		position: fixed;
+		left: 200px;
+	} 
+}*/
+
+/*
+Dropdown Arrows
+*/
+.widget h2, .widget h3 {
+	position: relative;
+}
+.widget h2:after, .widget h3:after {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: url(images/svg/arrowright.svg);
+	display: block;
+	right: 0;
+	top: 0;
+	background-size: 20px 20px;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: all .4s ease-in-out;
+}
+.widget h2.drop:after, .widget h3.drop:after {
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.commentlist {
+	opacity: 0.9;
+	list-style: none;
+}
+.comment {
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 95%;
+	background: #222222;
+}
+#respond {
+	opacity: 0.9;
+}
+.commentmetadata a{
+	font-size: 12px;
+}
+#commentform {
+	text-align: center;
+	width: 80%;
+}
+#commentform p {
+	text-align: left;
+	margin-bottom: 15px;
+}
+#comments {
+	text-align: center;
+}
+#commentform textarea {
+	height: 2em;
+}
+textarea:focus {
+	outline: 1px solid red;
+	box-shadow: inset 0 1px 1px red;
+}
+#respond {
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 95%;
+	text-align: center;
+	margin: auto;
+}
+
+/* PAGINATION */
+.thepagination {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.thepagination:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.prevpag {
+	text-align: left;
+	float: left;
+}
+.nextpag {
+	text-align: right;
+	float: right;
+}
+/* PAGINATION EDGE */
+
+.widgettitle:hover {
+	color: red;
+}
